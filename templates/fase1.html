@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/cerebro.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/reset.css">
+    <script src="/static/index.js"></script>
+    <title>Fase 1</title>
+</head>
+<body>
+    <div class="janela">
+        <header class="titulo">
+            <h1>Logos</h1>
+            <button onclick="pegar()" id="duvida"><img src="/static/img/ui.png" alt="menu"></button>
+            <ul id="ul" class="fases ocultar">
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="/fase1">
+                            <input class="link" type="submit" value="Fase 1">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 2">
+                        </form>
+                    </li>
+                </div>     
+                <br>
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 3">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 4">
+                        </form>
+                    </li>
+                </div> 
+                <br>    
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 5">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 6">
+                        </form>
+                    </li>
+                </div>
+                <br>
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 7">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 8">
+                        </form>
+                    </li>
+                </div>
+                <br>     
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 9">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 10">
+                        </form>
+                    </li>
+                </div>
+            </ul>
+        </header>
+        <main class="pergunta">
+            <p>Qual grupo continua a <br>
+                seguinte série: <br> 
+                2A3, 4B5, 6C7...</p>  
+            <form action="/fase1" method="post">
+                <input id="pergunta" autocomplete="off" name="resposta1">
+                <input class="selecionado" type="submit" value="Next">
+            </form>
+        </main>
+    </div>
+</body>
+</html>

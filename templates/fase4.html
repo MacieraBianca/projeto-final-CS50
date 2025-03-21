@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/cerebro.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/reset.css">
+    <script src="/static/index.js"></script>
+    <title>Fase 4</title>
+</head>
+<body>
+    <div class="janela">
+        <header class="titulo">
+            <h1>Logos</h1>
+            <button onclick="pegar()" id="duvida"><img src="/static/img/ui.png" alt="menu"></button>
+            <ul id="ul" class="fases ocultar">
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="/fase1">
+                            <input class="link" type="submit" value="Fase 1">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="/fase2">
+                            <input class="link" type="submit" value="Fase 2">
+                        </form>
+                    </li>
+                </div>     
+                <br>
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="/fase3">
+                            <input class="link" type="submit" value="Fase 3">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="/fase4">
+                            <input class="link" type="submit" value="Fase 4">
+                        </form>
+                    </li>
+                </div> 
+                <br>    
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 5">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 6">
+                        </form>
+                    </li>
+                </div>
+                <br>
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 7">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 8">
+                        </form>
+                    </li>
+                </div>
+                <br>     
+                <div class="alinhar">
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 9">
+                        </form>
+                    </li>
+                    <li class="itens">
+                        <form action="">
+                            <input class="travado" type="submit" value="Fase 10">
+                        </form>
+                    </li>
+                </div>
+            </ul>
+        </header>
+        <main class="pergunta">
+            <div class="box">
+                <div class="esquerdo">
+                    <img src="/static/img/1.png" alt="tetris 1" height="45px" class="tetris um">
+                    <img src="/static/img/2.png" alt="tetris 2" height="45px" class="tetris dois">
+                    <br>
+                    <img src="/static/img/3.png" alt="tetris 3" height="45px" class="tetris tres">
+                    <img src="/static/img/4m.png" alt="tetris 4" height="45px" class="tetris quatro">
+                    <br>
+                    <img src="/static/img/5.png" alt="tetris 5" height="45px" class="tetris cico">
+                    <img src="/static/img/interrogacao.png" alt="interrogação" height="45px" class="tetris interrogacao" >
+                </div>  
+                <img src="/static/img/linha.png" alt="linha" height="137px">
+                <div class="direito">
+                    <img src="/static/img/a.png" alt="tetris a" height="45px" class="tetris A">A 
+                    <img src="/static/img/b.png" alt="tetris b" height="45px" class="tetris b">B
+                    <br>
+                    <img src="/static/img/c.png" alt="tetris c" height="45px" class="tetris c">C
+                    <img src="/static/img/d.png" alt="tetris d" height="45px" class="tetris d">D
+                    <br>
+                    <img src="/static/img/e.png" alt="tetris e" height="45px" class="tetris e">E
+                    <img src="/static/img/f.png" alt="tetris f" height="45px" class="tetris f">F
+                </div>
+            </div>    
+            <form action="/fase4" method="post">
+                <input id="pergunta" autocomplete="off" name="resposta4">
+                <input class="selecionado" type="submit" value="Next">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
